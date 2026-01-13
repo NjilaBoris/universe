@@ -1,6 +1,7 @@
 import { Space_Grotesk, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TransitionProvider from "../providers/TransitionProvider";
+import Nav from "@/components/Nav/Nav";
 
 const geistSans = Space_Grotesk({
   variable: "--font-geist-sans",
@@ -23,7 +24,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.className} ${geistMono.variable} antialiased`}
       >
-        <TransitionProvider>{children}</TransitionProvider>
+        <TransitionProvider>
+          <Nav />
+          {children}
+        </TransitionProvider>
       </body>
     </html>
   );
