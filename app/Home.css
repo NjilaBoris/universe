@@ -1,0 +1,175 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  filter: url("#goo");
+}
+.hero .hero-container .hero-img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--base-300);
+  clip-path: polygon(
+    4rem 0px,
+
+    calc(50% - 15rem) 0px,
+    calc(50% - 13.5rem) 2.75rem,
+    calc(50% + 13.5rem) 2.75rem,
+    calc(50% + 15rem) 0px,
+
+    calc(100% - 4rem) 0px,
+    100% 4rem,
+
+    100% calc(100% - 4rem),
+    calc(100% - 4rem) 100%,
+
+    4rem 100%,
+    0px calc(100% - 4rem),
+    0px 4rem
+  );
+}
+.hero .hero-container .hero-img-container .hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero .hero-container .hero-img-container .hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero .hero-container .hero-img-container .hero-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgb(242 238 218 / 0.125),
+    rgb(242 238 218 / 0.125) 4px,
+    transparent 4px,
+    transparent 10px
+  );
+  background-size: 100% 9px;
+  filter: blur(2px);
+  animation: pan-overlay 30s infinite linear;
+  z-index: 1;
+}
+@keyframes pan-overlay {
+  from {
+    background-position: 0% 0%;
+  }
+
+  to {
+    background-position: 0% -100%;
+  }
+}
+.hero .hero-container .hero-img-container .hero-img-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+}
+.hero .hero-container .hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.hero .hero-container .hero-content .container {
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.hero .hero-container .hero-content .container .hero-content-nav {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.hero
+  .hero-container
+  .hero-content
+  .container
+  .hero-content-nav
+  div:nth-child(1) {
+  flex: 4;
+}
+.hero
+  .hero-container
+  .hero-content
+  .container
+  .hero-content-nav
+  div:nth-child(2) {
+  flex: 1;
+}
+.hero .hero-container .hero-content .container .hero-content-nav .hero-timer {
+  opacity: 0;
+  will-change: opacity;
+}
+.hero .hero-container .hero-content .container .hero-content-nav .hero-timer p {
+  width: 10rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(242, 238, 218, 0.05);
+  border: 1px solid rgba(242, 238, 218, 0.15);
+  border-radius: 0.25rem;
+  backdrop-filter: blur(0.2rem);
+}
+
+.hero .hero-container .hero-content .container .hero-content-footer {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.hero
+  .hero-container
+  .hero-content
+  .container
+  .hero-content-footer
+  div:nth-child(1) {
+  flex: 4;
+}
+
+.hero
+  .hero-container
+  .hero-content
+  .container
+  .hero-content-footer
+  div:nth-child(2) {
+  flex: 1;
+}
+
+.hero
+  .hero-container
+  .hero-content
+  .container
+  .hero-content-footer
+  .hero-footer-copy
+  p {
+  width: 50%;
+}
