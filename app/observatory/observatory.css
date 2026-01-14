@@ -1,0 +1,242 @@
+.hero.hero-observatory {
+  height: 100svh;
+}
+
+.hero.hero-observatory .hero-container .hero-img-container .hero-img {
+  filter: saturate(0);
+}
+
+.hero.hero-observatory .hero-container .hero-img-container .hero-img-gradient {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.25) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 1;
+}
+
+.hero.hero-observatory .hero-container .hero-content .container {
+  color: var(--base-100);
+}
+
+/* observatory - intro section */
+.intro.intro-observatory {
+  margin: 3rem 0;
+}
+
+/* observatory - routine section */
+.routine {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.routine .routine-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  filter: url("#goo");
+}
+
+.routine .routine-container .routine-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--base-300);
+  clip-path: polygon(
+    4rem 0px,
+
+    calc(50% - 15rem) 0px,
+    calc(50% - 13.5rem) 2.75rem,
+    calc(50% + 13.5rem) 2.75rem,
+    calc(50% + 15rem) 0px,
+
+    calc(100% - 4rem) 0px,
+    100% 4rem,
+
+    100% calc(100% - 4rem),
+    calc(100% - 4rem) 100%,
+
+    4rem 100%,
+    0px calc(100% - 4rem),
+    0px 4rem
+  );
+}
+
+.routine .routine-container .routine-copy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.routine .routine-container .routine-copy .container {
+  padding: 6rem;
+}
+
+.routine .routine-container .routine-copy .container .routine-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.routine .routine-container .routine-copy .container .routine-progress-bar {
+  position: relative;
+  width: 100%;
+  height: 0.25rem;
+  background-color: #3f3f3f;
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+
+.routine
+  .routine-container
+  .routine-copy
+  .container
+  .routine-progress-bar
+  .routine-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--base-500);
+  transform: scaleX(0);
+  transform-origin: left;
+  will-change: transform;
+}
+
+.routine .routine-container .routine-copy .container .routine-slider {
+  width: 100%;
+  height: calc(100% - 10rem);
+  overflow: hidden;
+}
+
+.routine
+  .routine-container
+  .routine-copy
+  .container
+  .routine-slider
+  .routine-slider-wrapper {
+  position: relative;
+  width: 350%;
+  height: 100%;
+  transform: translateX(0%);
+  display: flex;
+  gap: 1.5rem;
+  will-change: transform;
+}
+
+.routine
+  .routine-container
+  .routine-copy
+  .container
+  .routine-slider
+  .routine-slider-wrapper
+  .routine-block {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #303030;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.routine
+  .routine-container
+  .routine-copy
+  .container
+  .routine-slider
+  .routine-slider-wrapper
+  .routine-block
+  .routine-block-header,
+.routine
+  .routine-container
+  .routine-copy
+  .container
+  .routine-slider
+  .routine-slider-wrapper
+  .routine-block
+  .routine-block-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.routine
+  .routine-container
+  .routine-copy
+  .container
+  .routine-slider
+  .routine-slider-wrapper
+  .routine-block
+  .routine-block-header {
+  align-items: flex-start;
+}
+
+.routine
+  .routine-container
+  .routine-copy
+  .container
+  .routine-slider
+  .routine-slider-wrapper
+  .routine-block
+  .routine-block-footer {
+  align-items: flex-end;
+}
+
+.routine
+  .routine-container
+  .routine-copy
+  .container
+  .routine-slider
+  .routine-slider-wrapper
+  .routine-block
+  .routine-block-header
+  p:nth-child(2) {
+  color: var(--base-200);
+}
+
+.routine
+  .routine-container
+  .routine-copy
+  .container
+  .routine-slider
+  .routine-slider-wrapper
+  .routine-block
+  .routine-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  min-width: 5rem;
+  aspect-ratio: 1;
+}
+
+.routine
+  .routine-container
+  .routine-copy
+  .container
+  .routine-slider
+  .routine-slider-wrapper
+  .routine-block
+  .routine-icon
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
