@@ -6,30 +6,30 @@ const Nav = () => {
   return (
     <>
       <nav>
-        <div class="nav-container">
-          <div class="nav-bg"></div>
+        <div className="nav-container">
+          <div className="nav-bg"></div>
         </div>
 
-        <div class="nav-mobile-header">
-          <p class="nav-logo">Orbit Matter</p>
-          <p class="nav-menu-toggle">Menu</p>
+        <div className="nav-mobile-header">
+          <p className="nav-logo">Orbit Matter</p>
+          <p className="nav-menu-toggle">Menu</p>
         </div>
 
-        <div class="nav-overlay">
-          <div class="nav-items">
-            <div class="nav-item">
+        <div className="nav-overlay">
+          <div className="nav-items">
+            <div className="nav-item">
               <Link href="/">Index</Link>
             </div>
-            <div class="nav-item">
+            <div className="nav-item">
               <Link href="/observatory">Observatory</Link>
             </div>
-            <div class="nav-item">
+            <div className="nav-item">
               <Link href="/expedition">Expedition</Link>
             </div>
-            <div class="nav-item">
+            <div className="nav-item">
               <Link href="/traces">Traces</Link>
             </div>
-            <div class="nav-item">
+            <div className="nav-item">
               <Link href="/contact">Contact</Link>
             </div>
           </div>

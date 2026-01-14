@@ -126,7 +126,7 @@
   flex: 1;
 }
 .hero .hero-container .hero-content .container .hero-content-nav .hero-timer {
-  opacity: 0;
+  opacity: 1;
   will-change: opacity;
 }
 .hero .hero-container .hero-content .container .hero-content-nav .hero-timer p {
@@ -135,7 +135,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(242, 238, 218, 0.05);
+  background-color: rgba(104, 103, 101, 0.05);
   border: 1px solid rgba(242, 238, 218, 0.15);
   border-radius: 0.25rem;
   backdrop-filter: blur(0.2rem);
@@ -172,4 +172,139 @@
   .hero-footer-copy
   p {
   width: 50%;
+}
+
+.intro {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.intro .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro .container .stats-container {
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.intro .container .stats-container .stat {
+  flex: 1;
+  background-color: var(--base-300);
+  border: 1px solid rgba(242, 238, 218, 0.15);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.intro .container .stats-container .stat .stat-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.intro .container .stats-container .stat .stat-copy .stats-copy-label {
+  position: relative;
+}
+
+.intro .container .stats-container .stat .stat-copy .stats-copy-label p {
+  margin-left: 1rem;
+}
+
+.intro .container .stats-container .stat .stat-copy .stats-copy-label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--base-500);
+  display: inline-block;
+}
+
+.intro .container .intro-header {
+  width: 50%;
+  margin-bottom: 2.5rem;
+}
+
+.intro .container .intro-copy {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2.5rem;
+}
+
+.intro .container .intro-copy .intro-copy-wrapper {
+  width: 70%;
+}
+
+.intro .container .intro-copy .intro-copy-wrapper h3 {
+  color: var(--base-300);
+}
+
+.intro .container .intro-copy .intro-copy-wrapper h3 .char {
+  display: inline-block;
+  will-change: color;
+}
+.featured-missions-header {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  z-index: -1;
+}
+.featured-missions-header h1 {
+  color: var(--base-100);
+  font-size: 10vw;
+}
+.featured-missions {
+  width: 100%;
+  padding: 7.5rem 1.5rem 15rem 1.5rem;
+}
+.featured-missions .featured-missions-list {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 7.5rem;
+}
+
+.featured-missions .featured-missions-list .featured-missions-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  background-color: var(--base-200);
+  padding: 3rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.featured-missions .featured-missions-list .featured-missions-item h3,
+.featured-missions .featured-missions-list .featured-missions-item p {
+  color: var(--base-400);
+}
+
+.featured-missions .featured-missions-list .featured-missions-item p {
+  font-weight: 600;
+}
+
+.featured-missions
+  .featured-missions-list
+  .featured-missions-item
+  .featured-mission-item-img {
+  aspect-ratio: 5/3;
+  overflow: hidden;
+  border-radius: 0.5rem;
 }
